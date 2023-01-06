@@ -20,10 +20,10 @@ System.register([], function (exports_1, context_1) {
                 }
                 get atividade() {
                     const atividade = {
-                        'sedentario': 1,
-                        'leve': 1.1,
-                        'medio': 1.3,
-                        'intenso': 1.5
+                        'sedentario': 1.1,
+                        'leve': 1.3,
+                        'medio': 1.5,
+                        'intenso': 1.7
                     };
                     return atividade[this.frequencia];
                 }
