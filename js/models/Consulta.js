@@ -20,7 +20,7 @@ System.register([], function (exports_1, context_1) {
                 }
                 get atividade() {
                     const atividade = {
-                        'sedentario': 0.9,
+                        'sedentario': 1,
                         'leve': 1.1,
                         'medio': 1.3,
                         'intenso': 1.5
