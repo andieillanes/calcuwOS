@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora de Calorías</title>
+    <!-- Bootstrap v4.1 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <section class="container">
+        
+        <div class="row">
+            <div class="card mt-2 col">
+                <div class="card-body">
+                    <h5 class="card-title">Calculadora de calorías</h5>
+                    <p class="card-text">
+                        Descubre tu requerimiento energético diario
+                    </p>
+    
+                    <form>    
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="sexo">Sexo</label>
+                                <select class="form-control" name="sexo" id="sexo" required>
+                                    <option value="">Selecione</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="feminino">Femenino</option>
+                                </select>
+                            </div>
+        
+                            <div class="form-group col-md-6">
+                                <label for="frequencia">Frecuencia de atividad física</label>
+                                <select class="form-control" name="frequencia" id="frequencia" required>
+                                    <option value="">Selecione</option>
+                                    <option value="sedentario">Sedentario</option>
+                                    <option value="leve">1 a 3 días por semana</option>
+                                    <option value="medio">3 a 5 días por semana</option>
+                                    <option value="intenso">5 a 7 días por semana</option>
+                                </select>
+                            </div>
+                        </div> <!-- /row -->
+    
+                        <div class="row">
+                            <div class="form-group col-md-4">
+                                <label for="idade">Edad</label>
+                                <input type="number" min="1" max="120" class="form-control" name="idade" id="idade" required>
+                            </div>
+    
+                            <div class="form-group col-md-4">
+                                <label for="peso">Peso(kg)</label>
+                                <input type="number" min="1" max="300" class="form-control" name="peso" id="peso" required>
+                            </div>
+    
+                            <div class="form-group col-md-4">
+                                <label for="altura">Altura(cm)</label>
+                                <input type="number" min="1" max="300" class="form-control" name="altura" id="altura" required>
+                            </div>
+                        </div> <!-- /row -->
+    
+                        <button class="btn btn-primary" type="submit">Calcular Calorías</button>
+                        <button class="btn btn-dark" type="reset">Limpar Formulario</button>
+    
+                    </form>
+                </div>
+            </div> <!-- /card -->
+        </div> <!-- /row -->
+        
+        <div id="renderMensagem" class="row"></div>
+        <div id="renderCalorias" class="row"></div>
+
+    </section>
+
+    <script src="lib/system.js"></script>
+    <script>
+        System.defaultJSExtensions = true;
+        System.import('js/app.js').catch(err => console.log(err));
+    </script>
+</body>
+</html>
