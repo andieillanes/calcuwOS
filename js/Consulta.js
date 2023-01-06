@@ -15,8 +15,8 @@ System.register([], function (exports_1, context_1) {
                 }
                 get TMB() {
                     return (this.sexo == "masculino") ?
-                        66.5 + (10 * this.peso) + (6.25 * this.altura) - (6.8 * this.idade) :
-                        655.1 + (9.5 * this.peso) + (6.25 * this.altura) - (4.7 * this.idade);
+                        66.5 + (10 * this.peso) + (6.25 * this.altura) - (5 * this.idade) + 5 :
+                        655.1 + (9.5 * this.peso) + (6.25 * this.altura) - (5 * this.idade) - 161;
                 }
                 get atividade() {
                     const atividade = {
