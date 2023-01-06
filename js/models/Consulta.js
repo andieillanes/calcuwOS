@@ -15,15 +15,15 @@ System.register([], function (exports_1, context_1) {
                 }
                 get TMB() {
                     return (this.sexo == "masculino") ?
-                        66.5 + (13.8 * this.peso) + (5 * this.altura) - (6.8 * this.idade) :
+                        66.5 + (10 * this.peso) + (5 * this.altura) - (6.8 * this.idade) :
                         655.1 + (9.5 * this.peso) + (1.8 * this.altura) - (4.7 * this.idade);
                 }
                 get atividade() {
                     const atividade = {
-                        'sedentario': 1.2,
-                        'leve': 1.375,
-                        'medio': 1.550,
-                        'intenso': 1.725
+                        'sedentario': 0.9,
+                        'leve': 1.1,
+                        'medio': 1.3,
+                        'intenso': 1.5
                     };
                     return atividade[this.frequencia];
                 }
